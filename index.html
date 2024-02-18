@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Validaciones JS</title>
+</head>
+
+<body>
+  <header>
+    <h1>Validaciones JS</h1>
+  </header>
+  <main>
+    <section>
+      <p>Los campos se validarán de la siguiente manera</p>
+      <p>Ficha: se puede ingresar cualquier caracter</p>
+      <p>Nombre: solo se puede ingresar letras</p>
+      <p>Apellidos: solo se puede ingresar letras</p>
+      <p>Correo: solo se puede ingresar números</p>
+      <p>Teléfono: solo se puede generar</p>
+      <p>Género: solo se puede seleccionar un género</p>
+      <p>Ciudad: solo se puede seleccionar una ciudad</p>
+      <p>Habilidades: se tiene que seleccionar como mínimo 3 habilidades</p>
+    </section>
+    <section>
+      <form action="" method="get" autocomplete="off" novalidate>
+        <div>
+          <label for="ficha">Número de ficha</label>
+          <input type="text" id="ficha" name="ficha" required>
+        </div>
+        <div>
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" pattern="[a-zA-Z]+" title="Solo letras" required>
+        </div>
+        <div>
+          <label for="apellidos">Apellidos</label>
+          <input type="text" id="apellidos" name="apellidos" pattern="[a-zA-Z]+" title="Solo letras" required>
+        </div>
+        <div>
+          <label for="correo">Correo</label>
+          <input type="email" id="correo" name="correo" required>
+        </div>
+        <div>
+          <label for="telefono">Teléfono</label>
+          <input type="tel" id="telefono" name="telefono" pattern="[0-9]{10}" maxlength="10" title="Solo números (10)"
+            required>
+        </div>
+        <div>
+          <input type="radio" name="genero" id="hombre" value="hombre" required>
+          <label for="hombre">Hombre</label>
+          <input type="radio" name="genero" id="mujer" value="mujer">
+          <label for="mujer">Mujer</label>
+          <input type="radio" name="genero" id="otro" value="otro">
+          <label for="otro">Otro</label>
+        </div>
+        <div>
+          <label for="ciudad">Ciudad</label>
+          <select name="ciudad" id="ciudad" required>
+            <option value="" disabled selected>Seleciona una ciudad</option>
+            <option value="bucaramanga">Bucaramanga</option>
+            <option value="giron">Giron</option>
+            <option value="floridablanca">Floridablanca</option>
+            <option value="medellin">Medellín</option>
+            <option value="barranquilla">Barranquilla</option>
+            <option value="bogota">Bogotá</option>
+          </select>
+        </div>
+        <div>
+          <p>Seleccione mínimo 3 habilidades</p>
+          <div>
+            <label for="html">HMTL</label>
+            <input type="checkbox" name="habilidades" id="html" value="html">
+          </div>
+          <div>
+            <label for="css">CSS</label>
+            <input type="checkbox" name="habilidades" id="css" value="css">
+          </div>
+          <div>
+            <label for="javascript">JavaScript</label>
+            <input type="checkbox" name="habilidades" id="javascript" value="javascript">
+          </div>
+          <div>
+            <label for="php">PHP</label>
+            <input type="checkbox" name="habilidades" id="php" value="php">
+          </div>
+          <div>
+            <label for="java">JAVA</label>
+            <input type="checkbox" name="habilidades" id="java" value="java">
+          </div>
+          <div>
+            <label for="sql">SQL</label>
+            <input type="checkbox" name="habilidades" id="sql" value="sql">
+          </div>
+          <div>
+            <label for="uml">UML</label>
+            <input type="checkbox" name="habilidades" id="uml" value="uml">
+          </div>
+
+        </div>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+</body>
+
+</html>
