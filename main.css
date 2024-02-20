@@ -129,3 +129,10 @@ body{
 .button--blue{
   background-color: #3c6bec;
 }
+
+.borde-rojo {
+  border-color: red;
+}
+.borde-verde {
+  border-color: green;
+}

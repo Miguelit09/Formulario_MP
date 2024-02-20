@@ -71,32 +71,34 @@
           <!-- Ficha -->
           <div class="control">
             <label for="ficha">Número de ficha</label>
-            <input type="text" id="ficha" name="ficha" class="control__input" required>
+            <input type="text" id="ficha" name="ficha" class="control__input entrada_valida" required>
           </div>
 
           <!-- Nombres -->
           <div class="control">
             <label for="nombre">Nombre</label>
-            <input type="text" name="nombre" id="nombre" pattern="[A-Za-z]+" class="control__input" required>
+            <input type="text" name="nombre" id="nombre" pattern="[A-Za-z]+" class="control__input entrada_valida"
+              required>
           </div>
 
           <!-- Apellidos -->
           <div class="control">
             <label for="apellidos">Apellidos</label>
-            <input type="text" name="apellidos" id="apellidos" pattern="[A-Za-z]+" class="control__input" required>
+            <input type="text" name="apellidos" id="apellidos" pattern="[A-Za-z]+" class="control__input entrada_valida"
+              required>
           </div>
 
           <!-- correo -->
           <div class="control">
             <label for="correos">Correo eléctronico</label>
-            <input type="email" name="correo" id="correo" class="control__input" required>
+            <input type="email" name="correo" id="correo" class="control__input entrada_valida" required>
           </div>
 
           <!-- Teléfono -->
           <div class="control">
             <label for="telefono">Teléfono</label>
-            <input type="tel" name="telefono" pattern="[0-9]{10}" maxlength="10" id="telefono" class="control__input"
-              required>
+            <input type="tel" name="telefono" id="telefono" pattern="[0-9]{10}" maxlength="10" id="telefono"
+              class="control__input entrada_valida" required>
           </div>
 
           <!-- Genero -->
